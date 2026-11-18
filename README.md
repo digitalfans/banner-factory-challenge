@@ -12,9 +12,9 @@ Elgiganten (Elkjøp) is the largest consumer electronics retailer in the Nordics
 The hero banner on its home page is the most valuable space on the site, and
 today every visitor sees the same one.
 
-We are working on changing that. In our project this is **Use Case 0**: a
-visitor looks at a product, leaves, and comes back later. When they return, the
-home page hero should speak to them, based on the product they looked at.
+We are working on changing that. A visitor looks at a product, leaves, and
+comes back later. When they return, the home page hero should speak to them,
+based on the product they looked at.
 
 This challenge is that use case.
 
@@ -22,7 +22,7 @@ This challenge is that use case.
 
 1. The user picks a **seed product**: the product the visitor looked at.
 2. The user picks a **language** for the banner: Danish, Swedish or English.
-3. The user asks for a banner.
+3. The user presses the **Generate banner** button.
 4. The application decides **which product to show**:
    - the best product currently on promotion for this visitor, or
    - the seed product itself, as a plain retargeting banner, when nothing on
@@ -60,6 +60,9 @@ None of these are required. All of them are welcome.
   follow the process and understand what is happening.
 - Show the cost and the time spent on each banner.
 - Show how banner generation could be optimised, in cost and in time.
+- Anything else you think makes the banner factory better to use. The
+  requirements above are the baseline: you are free to add to them and improve
+  on them.
 
 ## Choosing the product
 
@@ -111,11 +114,12 @@ similar), ask our team.
 
 ## Delivery
 
-1. **Fork** this repository.
-2. Build your solution in the fork.
+1. Clone this repository and host your copy in a GitHub repository of your own.
+   A fork works too, but it is not required.
+2. Build your solution there.
 3. Include instructions for running it locally: prerequisites, environment
    variables, and the commands to install and start it.
-4. Send us the link to your fork.
+4. Send us the link to your repository.
 
 ## Tips
 
