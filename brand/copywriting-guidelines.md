@@ -54,5 +54,6 @@ Lessons from our copy team's reviews of generated banners:
 
 ## Language
 
-The product feed is Danish (Elgiganten DK). Copy should read as natural,
-native language for the market, not as a translation.
+The product feed is Danish (Elgiganten DK), but the banner is written in the
+language chosen for it. Copy should read as natural, native language, not as a
+translation of the feed text.
