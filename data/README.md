@@ -25,9 +25,9 @@ Every record has the same 18 fields, all strings. An empty value is `""`.
 |---|---|
 | `product-name` | Product name |
 | `SKU` | Unique product id |
-| `Price` | Current price |
-| `SalePrice` | Sale price, when present |
-| `SavePriceAmount` | Amount saved, when present |
+| `Price` | Current price, the one the customer pays today. Any discount is already applied |
+| `SalePrice` | Filled on some discounted products, and then equal to `Price` |
+| `SavePriceAmount` | Amount saved against the previous price, when present. The previous price is not in the feed: it is `Price` + `SavePriceAmount` |
 | `Image` | Main product image URL |
 | `AdditionalImageUrls` | More image URLs, comma-separated in one string |
 | `DescriptionShort` | Short description |

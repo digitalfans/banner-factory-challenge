@@ -18,6 +18,16 @@ based on the product they looked at.
 
 This challenge is that use case.
 
+## What we want to prove
+
+The point of this demo is to prove two things:
+
+1. We can select a product and produce a banner **on demand**, customised to
+   the product the visitor looked at and to the promotions running right now.
+2. The banner follows the **basic design principles of the brand**.
+
+Do not worry about making the design perfect. We know it can be refined later.
+
 ## The use case
 
 1. The user picks a **seed product**: the product the visitor looked at.
@@ -37,13 +47,38 @@ This challenge is that use case.
 - Choose a seed product from the product feed.
 - Choose a language.
 - Generate a retargeting banner from those two inputs.
+- The banner has, at minimum, a **title**, a **subtitle**, a **product image**
+  and a **call to action**. Beyond that, you are free to design it however you
+  like.
 - The banner looks like it belongs on the Elgiganten home page. Use the
   references in [`examples/`](./examples/) and the live sites,
   [elgiganten.dk](https://www.elgiganten.dk) and
   [elgiganten.se](https://www.elgiganten.se). It should feel like the same
   family. It does not have to be identical.
+- The banner is a home page hero: **2048 × 768 px** (8:3), the size of the
+  production banners.
 - Everything in the banner is true: the product, the price and the saving come
   from the feed and are never invented.
+- The product shown is **in stock**. The seed product can be any product in the
+  feed, including one that is out of stock; what to show in that case is part of
+  your strategy.
+- Prices are always shown in **DKK**, as they come from the feed, whatever the
+  language. The language changes the text, not the market.
+
+### The two sets of examples
+
+- [`examples/production-banners/`](./examples/production-banners/) are real
+  banners we took from the Elgiganten websites. They show what runs on the home
+  page today.
+- [`examples/design-references/`](./examples/design-references/) were made by
+  our own team as a direction for personalised banners. Some of what they show,
+  such as subscription prices and legal text, cannot be produced from the feed.
+
+The two sets do not agree on everything, and neither do they agree with the
+brand guide: the guide and our references use the diagonal "wing" shape and the
+logo, and the production banners use neither. Both are optional here. Use the
+examples as inspiration and the brand guide for the basics: colour, typography
+and tone of voice.
 
 ### Stack
 
@@ -91,8 +126,8 @@ that you can explain it.
 | [`brand/fonts/`](./brand/fonts/) | The brand fonts, with a ready `fonts.css` |
 | [`brand/logo/`](./brand/logo/) | The Elgiganten logo in navy and white, SVG and PNG |
 | [`data/`](./data/) | A snapshot of the Danish product feed from 2026-08-25, with 28,231 products, and a description of its fields |
-| [`examples/production-banners/`](./examples/production-banners/) | 8 real hero banners from elgiganten.dk and elgiganten.se (2048 × 768) |
-| [`examples/design-references/`](./examples/design-references/) | 4 reference banners, one per customer segment, drawn by our design team |
+| [`examples/production-banners/`](./examples/production-banners/) | 8 real hero banners taken from elgiganten.dk and elgiganten.se (2048 × 768) |
+| [`examples/design-references/`](./examples/design-references/) | 4 reference banners, one per customer segment, made by our team (1792 × 640) |
 
 The feed is real data and it is Danish. It has no category, brand or language
 field. Explore it before you trust it.
